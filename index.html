@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Henrique Saccani Perovano | Portfólio</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <h1>Portfólio</h1>
+            <ul id="ul-nav">
+                <li><a href="#start">Início</a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#abilities">Habilidades</a></li>
+                <li><a href="#footer">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="start">
+            <img src="media/Imagem_p.png" alt="Profile Picture" id="profile-picture">
+            <h2>Olá, eu sou<br><span class="highlight">Henrique Saccani Perovano</span></h2>
+            <div class="action-buttons">
+                <a href="" target="_blank" class="btn">Download CV</a>
+                <a href="" target="_blank" class="btn">Contato Whatsapp</a>
+            </div>
+        </section>
+
+        <section id="apresentation">
+            <p>Sou estudante de Sistemas de Informação na UNESC, onde dedico meus estudos à Tecnologia da Informação. Meu objetivo é aplicar meu conhecimento em projetos práticos e continuar a evoluir profissionalmente na área de tecnologia.</p>
+        </section>
+
+        <section id="project">
+            <h2>Projetos</h2>
+            <div class="project-card">
+                <h3>Sistema de Apontamento de Horas</h3>
+                <p>Desenvolvido para a empresa HP Terraplenagem, o sistema automatiza o registro de jornadas utilizando PHP e MySQL em ambiente XAMPP.</p>
+                <div class="project-tags">
+                    <span>PHP</span> <span>MySQL</span> <span>XAMPP</span>
+    </div>
+    <a href="https://github.com/HenriqSP12/Hpterraplenagem" target="_blank" class="btn-project">Ver Github</a>
+</div>
+            </section>
+
+        <section id="abilities">
+            <h2>Conhecimentos e Tecnologias</h2>
+            <div class="abilities-container">
+                <div class="ability-group">
+                    <h4>Desenvolvimento</h4>
+                    <p>HTML5, CSS3, Python e noções de PHP.</p>
+                </div>
+            <div class="ability-group">
+                <h4>Idiomas</h4>
+                <p>Inglês Intermediário – Wizard (Benchmark).</p> </div>
+</div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h2>Contatos adicionais</h2>
+                <ul id="nav-social">
+            <li>
+                <a href="https://github.com/HenriqSP12" target="_blank">
+                    <img src="media/github-mark-white.png" alt="Github logo">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="copiarEmail()"><img src="media/gmail_icon.png" alt="E-mail logo"></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+                function copiarEmail() {
+            const email = "hsperovano@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("E-mail copiado: " + email);
+            });
+        }
+    </script>
+</body>
+</html>
